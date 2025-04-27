@@ -1,0 +1,23 @@
+2025-04-26 02:28:11,736 - INFO - Model Training initialized..
+2025-04-26 02:28:12,391 - INFO - Data loaded successfully for Model Training
+2025-04-26 02:28:12,600 - INFO - Successfully read the YAML file from: config/config.yaml
+2025-04-26 02:28:12,601 - INFO - Loaded configuration from config.yaml
+2025-04-26 02:28:12,601 - ERROR - Error occurred during model architecture: 'model'
+2025-04-26 02:28:12,601 - ERROR - Error during model training process: Error in D:\MLOPS-proj-2\src\base_model.py , line 19 : Failed to create model
+2025-04-26 23:16:50,518 - INFO - Model Training and COMET ML initialized..
+2025-04-26 23:16:53,080 - INFO - Data loaded successfully for Model Training
+2025-04-26 23:16:53,296 - INFO - Successfully read the YAML file from: config/config.yaml
+2025-04-26 23:16:53,296 - INFO - Loaded configuration from config.yaml
+2025-04-26 23:16:53,296 - INFO - Creating model with 25225 users and 17556 anime
+2025-04-26 23:16:53,296 - INFO - Embedding size: 128
+2025-04-26 23:16:53,296 - INFO - Loss function: binary_crossentropy
+2025-04-26 23:16:53,296 - INFO - Optimizer: Adam
+2025-04-26 23:16:53,296 - INFO - Metrics: ['mae', 'mse']
+2025-04-26 23:16:53,296 - INFO - Number of users: 25225, Number of anime: 17556
+2025-04-26 23:16:53,595 - INFO - Model created and compiled successfully.
+2025-04-26 23:59:35,011 - INFO - Model training completed.
+2025-04-26 23:59:35,031 - WARNING - You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. 
+2025-04-26 23:59:35,286 - INFO - Model saved to artifacts/model\model.h5
+2025-04-26 23:59:35,321 - INFO - Extracting weights for user_embedding
+2025-04-26 23:59:35,339 - INFO - Extracting weights for anime_embedding
+2025-04-26 23:59:35,639 - INFO - User and Anime weights saved successfully....
