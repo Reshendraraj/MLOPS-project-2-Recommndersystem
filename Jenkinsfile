@@ -26,9 +26,9 @@ pipeline {
             steps {
                 script {
                     echo 'Making virtual environment..'
-                    bat '''
+                    sh '''
                     python -m venv ${VENV_DIR}
-                    ${VENV_DIR}\\Scripts\\activate
+                    . ${VENV_DIR}/bin/activate
                     pip install --upgrade pip
                     pip install -e .
                     pip install dvc
@@ -42,13 +42,13 @@ pipeline {
                 withCredentials([file(credentialsId: 'gcp-key', variable: 'GOOGLE_APPLICATION_CREDENTIALS')]) {
                     script {
                         echo 'DVC Pull...'
-                        bat '''
-                        ${VENV_DIR}\\Scripts\\activate
+                        sh '''
+                        . ${VENV_DIR}/bin/activate
                         dvc pull
                         '''
                     }
                 }
             }
         }
-    }
+    }  
 }
